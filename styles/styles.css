@@ -3,3 +3,160 @@ img {
 	height: auto;
 	object-fit: contain;
 }
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/ptsans-400.woff2") format("woff2");
+	font-display: swap;
+
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/ptsans-700.woff2") format("woff2");
+	font-display: swap;
+}
+
+
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 18px;
+	line-height: 21px;
+	color: #333333;
+	background-color: #ffff
+}
+
+.page-header {
+	color: #000000;
+	background-color: #ffff
+}
+
+.navigation-link {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	text-align: left;
+	color: #000000;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.button-search-hotel {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	color: #ffff;
+	background-color: #756157;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.welcome-to-sedona {
+	background-color: #3B6689;
+	color: #ffff;
+	background-image: url(.../images/index-main-background.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.sedona-description {
+	font-weight: 700;
+	font-size: 30px;
+	Line-height: 36px;
+	text-align: Center;
+	color: #000000;
+	background-color: #ffff;
+}
+
+.sedona-description-adventages {
+	font-weight: 400;
+	font-size: 22px;
+	Line-height: 26px;
+	text-align: Center;
+	color: #000000;
+	background-color: #ffff;
+}
+
+.advantages-list {
+	text-align: center;
+}
+
+.advantages-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.advantages-title-main {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #ffff;
+	background-color: #82B3D3;
+	text-transform: uppercase;
+}
+
+.advantages-description-main {
+	color: #ffff;
+	background-color: #82B3D3;
+	text-transform: none;
+}
+
+.question-about-city {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.question-about-city-description {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+	text-transform: none;
+	text-align: center;
+}
+
+.find-hotel {
+	text-align: center;
+}
+
+.newsletter-subscription {
+	text-align: center;
+}
+
+.subscription {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	color: #ffff;
+	background-color: #3B6689;
+	background-image: url(images/background-for-newsteller-subscription.jpg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.subscription-description {
+	font-size: 22px;
+	line-height: 26px;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.subscribe {
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffff;
+	background-color: #82B3D3;
+}
