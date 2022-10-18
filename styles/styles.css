@@ -86,12 +86,6 @@ body {
 	text-align: center;
 }
 
-.advantages-title {
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
 
 .main-advantages-item {
 	font-size: 24px;
@@ -107,6 +101,13 @@ body {
 	line-height: 21px;
 	font-weight: 400;
 	text-transform: none;
+}
+
+.advantages-item {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .question-about-city {
@@ -308,7 +309,7 @@ body {
 	text-decoration: none;
 }
 
-.pagination-link [aria-current="page"] {
+.pagination-link[aria-current="page"] {
 	font-size: 20px;
 	line-height: 36px;
 	font-weight: 700;
@@ -329,7 +330,7 @@ body {
 	background-color: #82b3d3;
 }
 
-.pagination-ellipsis {
+.pagination-link-ellipsis:not([href]) {
 	font-size: 22px;
 	line-height: 26px;
 	font-weight: 400;
