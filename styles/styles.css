@@ -93,7 +93,7 @@ body {
 	text-transform: uppercase;
 }
 
-.advantages-title-main {
+.main-advantages-item {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
@@ -103,8 +103,9 @@ body {
 }
 
 .advantages-description-main {
-	color: #ffffff;
-	background-color: #82b3d3;
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
 	text-transform: none;
 }
 
@@ -307,8 +308,7 @@ body {
 	text-decoration: none;
 }
 
-.pagination-item,
-.pagination-current {
+.pagination-link [aria-current="page"] {
 	font-size: 20px;
 	line-height: 36px;
 	font-weight: 700;
@@ -318,7 +318,7 @@ body {
 	background-color: #f2f2f2;
 }
 
-.pagination-item {
+.pagination-link {
 	font-size: 20px;
 	line-height: 36px;
 	font-weight: 700;
