@@ -103,12 +103,15 @@ body {
 	text-transform: none;
 }
 
-.advantages-item {
+.main-advantages-item {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
+	color: #ffffff;
+	background-color: #82b3d3;
 	text-transform: uppercase;
-}
+	width: 1200px;
+	display: flex;
 
 .question-about-city {
 	font-size: 30px;
