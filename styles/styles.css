@@ -127,7 +127,7 @@ body {
 	background-color: #ffffff;
 }
 
-.sedona-description-adventages {
+.sedona-description-advantages {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 26px;
@@ -136,7 +136,7 @@ body {
 	background-color: #ffffff;
 }
 
-.advantages-list {
+.feautures-list {
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -150,31 +150,30 @@ body {
 }
 
 .advantages-item {
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 700;
-	text-transform: uppercase;
 	width: 400px;
 	height: 385px;
 	margin: 0;
 	padding: 0;
-	background-color: #82b3d3;
-	color: #ffffff;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .main-advantages-item {
-	font-size: 24px;
-	line-height: 28px;
-	font-weight: 700;
-	color: #ffffff;
 	background-color: #82b3d3;
-	text-transform: uppercase;
 	width: 1200px;
 	display: flex;
+	align-items: center;
 }
+
+.main-advantages-item-2 {
+	background-color: #82b3d3;
+	width: 1200px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
 
 .light-item {
 	background-color: #eff6fb;
@@ -191,8 +190,17 @@ body {
 	color: #000000;
 }
 
-.adventages-title {
+.advantages-title {
+	font-size: 24px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 	text-align: center;
+}
+
+.advantages-title-main {
+	text-transform: uppercase;
 }
 
 .advantages-description {
