@@ -1,3 +1,5 @@
+/* stylelint-disable declaration-colon-space-after */
+/* stylelint-disable indentation */
 /* stylelint-disable CssSyntaxError */
 img {
 	max-width: 100%;
@@ -21,8 +23,15 @@ img {
 	font-display: swap;
 }
 
+html {
+	height: 100%;
+}
 
 body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 	font-family: "PT Sans", sans-serif;
 	font-size: 18px;
 	line-height: 21px;
@@ -30,9 +39,31 @@ body {
 	background-color: #ffffff;
 }
 
+.page-container {
+	margin: auto;
+	width: 1200px;
+}
+
 .page-header {
 	color: #000000;
 	background-color: #ffffff;
+}
+
+.navigation {
+	display: flex;
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.navigation-list {
+	width: 340px;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation-user {
+	width: 270px;
+	margin-left: auto;
 }
 
 .navigation-link {
@@ -56,12 +87,35 @@ body {
 	text-transform: uppercase;
 }
 
+.main-container {
+	flex-grow: 1;
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.page-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
 .welcome-to-sedona {
 	background-color: #3b6689;
 	color: #ffffff;
 	background-image: url("/images/index-main-background.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+	display: block;
+	margin: 0 auto;
+	width: 1200px;
+	height: 485px;
+}
+
+.sedona-discripton-section {
+	display: flex;
+	flex-direction: column;
+	padding-top: 69px;
+	padding-right: 275px;
+	padding-bottom: 90px;
+	padding-left: 275px;
 }
 
 .sedona-description {
@@ -83,24 +137,32 @@ body {
 }
 
 .advantages-list {
+	margin: 0;
+	padding: 0;
 	text-align: center;
+	color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style-type: none;
+	flex-direction: row;
+	width: 1200px;
 }
 
-
-.main-advantages-item {
+.advantages-item {
 	font-size: 24px;
 	line-height: 28px;
 	font-weight: 700;
-	color: #ffffff;
-	background-color: #82b3d3;
 	text-transform: uppercase;
-}
-
-.advantages-description-main {
-	font-size: 18px;
-	line-height: 21px;
-	font-weight: 400;
-	text-transform: none;
+	width: 400px;
+	height: 385px;
+	margin: 0;
+	padding: 0;
+	background-color: #82b3d3;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .main-advantages-item {
@@ -112,6 +174,43 @@ body {
 	text-transform: uppercase;
 	width: 1200px;
 	display: flex;
+}
+
+.light-item {
+	background-color: #eff6fb;
+	color: #000000;
+}
+
+.dark-item {
+	background-color: #e4f0f7;
+	color: #000000;
+}
+
+.white-item {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.adventages-title {
+	text-align: center;
+}
+
+.advantages-description {
+	font-size: 18px;
+	line-height: 21px;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.find-hotel {
+	display: flex;
+	flex-direction: column;
+	padding-top: 96px;
+	padding-right: 304px;
+	padding-bottom: 96px;
+	padding-left: 304px;
+	text-align: center;
+}
 
 .question-about-city {
 	font-size: 30px;
@@ -129,10 +228,6 @@ body {
 	text-align: center;
 }
 
-.find-hotel {
-	text-align: center;
-}
-
 .newsletter-subscription-index {
 	font-size: 30px;
 	line-height: 36px;
@@ -144,6 +239,12 @@ body {
 	background-image: url("/images/background-for-newsteller-subscription.jpg");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	padding-top: 96px;
+	padding-right: 258px;
+	padding-bottom: 104px;
+	padding-left: 258px;
 }
 
 .subscription-description {
@@ -160,6 +261,27 @@ body {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: #82b3d3;
+}
+
+.page-footer-container {
+	display: flex;
+	width: 1060px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.footer-social {
+	width: 142px;
+	margin-right: auto;
+}
+
+.footer-phone {
+	width: 331px;
+}
+
+.footer-link {
+	margin-left: 236px;
+	width: 115px;
 }
 
 .search-hotel-filters {
@@ -181,6 +303,7 @@ body {
 	text-transform: none;
 	text-align: left;
 }
+
 
 .breadcrumbs-link {
 	font-size: 16px;
