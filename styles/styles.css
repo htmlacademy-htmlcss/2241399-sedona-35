@@ -518,6 +518,8 @@ body {
 .hotel-sort {
 	display: flex;
 	justify-content: space-between;
+	padding: 50px 70px 40px 50px;
+	gap: 70px;
 }
 
 .header-find-hotels {
@@ -528,8 +530,9 @@ body {
 	text-transform: uppercase;
 	color: #000000;
 	background-color: #ffffff;
-	padding: 56px 201px 46px 70px;
+	padding-top: 6px;
 	margin: 0;
+	margin-right: auto;
 }
 
 .select-control {
@@ -537,7 +540,10 @@ body {
 	width: 292px;
 	height: 50px;
 	padding: 14px 131px 14px 20px;
-	margin-top: 50px;
+}
+
+.view-type-buttons {
+	gap: 8px;
 }
 
 .sort-selection {
@@ -548,14 +554,11 @@ body {
 	text-transform: none;
 	color: #333333;
 	background-color: #ffffff;
-	padding: 14px 131px 14px 20px;
 }
 
 .sort-button {
 	width: 48px;
 	height: 48px;
-	margin-right: 8px;
-	margin-top: 50px;
 }
 
 .hotels-list {
