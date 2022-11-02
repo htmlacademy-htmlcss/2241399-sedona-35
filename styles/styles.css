@@ -582,7 +582,6 @@ body {
 	border-width: 1px;
 	border-color: #e6e6e6;
 	padding: 20px;
-	width: 340px;
 }
 
 .hotel-card-link {
@@ -603,7 +602,7 @@ body {
 .hotel-card-buttons-and-raiting {
 	display: grid;
 	grid-template-columns: 140px 140px;
-	gap: 20px 16px;
+	gap: 16px 20px;
 }
 
 .hotel-card-title {
