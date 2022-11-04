@@ -1,3 +1,4 @@
+/* stylelint-disable value-keyword-case */
 /* stylelint-disable function-url-quotes */
 /* stylelint-disable declaration-block-no-duplicate-properties */
 /* stylelint-disable declaration-colon-space-after */
@@ -134,6 +135,23 @@ body {
 	cursor: pointer;
 }
 
+.button-search-hotel-header:hover {
+	background-color: #615048;
+}
+
+.button-search-hotel-header:focus {
+	background-color: #615048;
+}
+
+.button-search-hotel-header:active {
+	color: #9e9089;
+}
+
+.button-search-hotel-header:disabled {
+	background-color: #e5e5e5;
+}
+
+
 .main-container {
 	flex-grow: 1;
 }
@@ -183,7 +201,7 @@ body {
 }
 
 .sedona-description::before {
-	content:"";
+	content: "";
 	position: absolute;
 	background: url(../icons/white-background-welcome.svg);
 	background-position: center top 70px;
@@ -282,11 +300,11 @@ body {
 }
 
 .advantages-title-light::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 60px;
 	height: 2px;
-	background-color:#a8acaf;
+	background-color: #a8acaf;
 	bottom: -32px;
 	left: 50%;
 	margin-left: -30px;
@@ -304,11 +322,11 @@ body {
 }
 
 .advantages-title-main::before {
-	content:"";
+	content: "";
 	position: absolute;
 	width: 60px;
 	height: 2px;
-	background-color:#ffffffff;
+	background-color: #ffffffff;
 	bottom: -32px;
 	left: 50%;
 	margin-left: -30px;
@@ -316,7 +334,7 @@ body {
 
 .icon-advantages-title-1 {
 	display: block;
-	margin:0;
+	margin: 0;
 	padding: 0;
 	padding-bottom: 30px;
 }
@@ -361,6 +379,22 @@ body {
 	margin: auto;
 	padding: 8px 50px;
 	border-radius: 4px;
+}
+
+.button-search-hotel:hover {
+	background-color: #615048;
+}
+
+.button-search-hotel:focus {
+	background-color: #615048;
+}
+
+.button-search-hotel:active {
+	color: #9e9089;
+}
+
+.button-search-hotel:disabled {
+	background-color: #e5e5e5;
 }
 
 .question-about-city {
@@ -436,6 +470,22 @@ body {
 	padding: 8px 50px;
 }
 
+.subscribe:hover {
+	background-color: #68a2ca;
+}
+
+.subscribe:focus {
+	background-color: #68a2ca;
+}
+
+.subscribe:active {
+	color: #a7cae0;
+}
+
+.subscribe:disabled {
+	color: #a7cae0;
+}
+
 .page-footer-container {
 	display: flex;
 	width: 1060px;
@@ -454,6 +504,11 @@ body {
 	list-style-type: none;
 	gap: 27px;
 	padding: 0;
+	color: #83b3d3;
+}
+
+.icon-vk {
+	color: #83b3d3;
 }
 
 .icon-vk::before {
@@ -461,7 +516,24 @@ body {
 	display: block;
 	width: 24px;
 	height: 14px;
-	background: url(../icons/social-networks/icon-social-vk.svg) no-repeat center;
+	mask: url(../icons/social-networks/icon-social-vk.svg) no-repeat center;
+	background-color: currentColor;
+}
+
+.icon-vk:hover {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-vk:focus {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-vk:active {
+	color: rgba(104, 162, 202, 0.3);
+}
+
+.icon-telegram {
+	color: #83b3d3;
 }
 
 .icon-telegram::before {
@@ -469,7 +541,24 @@ body {
 	display: block;
 	width: 18px;
 	height: 16px;
-	background: url(../icons/social-networks/icon-social-telegram.svg) no-repeat center;
+	mask: url(../icons/social-networks/icon-social-telegram.svg) no-repeat center;
+	background-color: currentColor;
+}
+
+.icon-telegram:hover {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-telegram:focus {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-telegram:active {
+	color: rgba(104, 162, 202, 0.3);
+}
+
+.icon-youtube {
+	color: #83b3d3;
 }
 
 .icon-youtube::before {
@@ -477,7 +566,20 @@ body {
 	display: block;
 	width: 22px;
 	height: 17px;
-	background: url(../icons/social-networks/icon-social-youtube.svg) no-repeat center;
+	mask: url(../icons/social-networks/icon-social-youtube.svg) no-repeat center;
+	background: currentColor;
+}
+
+.icon-youtube:hover {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-youtube:focus {
+	color: rgba(104, 162, 202, 1);
+}
+
+.icon-youtube:active {
+	color: rgba(104, 162, 202, 0.3);
 }
 
 .footer-phone {
@@ -493,8 +595,24 @@ body {
 	text-decoration: none;
 }
 
+.footer-contact-phone:hover {
+	color: rgba(117, 97, 87, 1);
+}
+
+.footer-contact-phone:focus {
+	color: rgba(117, 97, 87, 1);
+}
+
+.footer-contact-phone:active {
+	color: rgba(117, 97, 87, 0.3);
+}
+
 .footer-link {
 	margin-left: 41px;
+}
+
+.html-academy-logo {
+	color: #000000;
 }
 
 .html-academy-logo::before {
@@ -502,7 +620,20 @@ body {
 	display: block;
 	width: 115px;
 	height: 50px;
-	background: url(../icons/icon-logo-html-academy.svg) no-repeat center;
+	mask: url(../icons/icon-logo-html-academy.svg) no-repeat center;
+	background: currentColor;
+}
+
+.html-academy-logo:hover {
+	color: #756157;
+}
+
+.html-academy-logo:focus {
+	color: rgba(117, 97, 87, 1);
+}
+
+.html-academy-logo:active {
+	color: rgba(117, 97, 87, 0.3);
 }
 
 .search-hotel-filters {
@@ -551,12 +682,29 @@ body {
 	text-decoration: none;
 }
 
+.breadcrumbs-link:hover {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+	color: rgba(255, 255, 255, 1);
+}
+
+.breadcrumbs-link:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-home {
+	color:#ffffff;
+}
+
 .breadcrumbs-home::before {
 	content: "";
 	display: block;
 	width: 17px;
 	height: 21px;
-	background: url(../icons/icon-home-breadcrumbs.svg) no-repeat center;
+	mask: url(../icons/icon-home-breadcrumbs.svg) no-repeat center;
+	background: currentColor;
 }
 
 .catalog-filter {
@@ -625,6 +773,22 @@ body {
 	border-radius: 4px;
 }
 
+.filter-button-apply:hover {
+	background-color: #68a2ca;
+}
+
+.filter-button-apply:focus {
+	background-color: #68a2ca;
+}
+
+.filter-button-apply:active {
+	color: #a7cae0;
+}
+
+.filter-button-apply:disabled {
+	color: #a7cae0;
+}
+
 .filter-button-reset {
 	font-size: 16px;
 	line-height: 20px;
@@ -633,8 +797,27 @@ body {
 	text-transform: uppercase;
 	color: #ffffff;
 	background-color: transparent;
-	border: 0;
+	border: 3px solid transparent;
 	cursor: pointer;
+	padding: 8px 57px;
+}
+
+.filter-button-reset:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.filter-button-reset:focus {
+	color: #ffffff;
+	border: 3px solid #83b3d3;
+	border-radius: 4px;
+}
+
+.filter-button-reset:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.filter-button-reset:disabled {
+	color: rgba(255, 255, 255, 1);
 }
 
 .hotel-sort {
@@ -649,6 +832,21 @@ body {
 	border-radius: 4px;
 	width: 48px;
 	height: 48px;
+}
+
+.sort-button:hover {
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+
+.sort-button:focus {
+	border: 2px solid #68a2ca;
+	border-radius: 4px;
+}
+
+.sort-button:active {
+	border: 2px solid #000000;
+	border-radius: 4px;
 }
 
 .sort-button[aria-current="page"] {
@@ -706,6 +904,24 @@ body {
 	line-height: 21px;
 	text-align: left;
 }
+
+.select-control:hover {
+	border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+	border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+	border: 2px solid #3f5e72;
+}
+
+.select-control:disabled {
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	color: rgba(0, 0, 0, 0.3);
+}
+
 
 .view-type-buttons {
 	display: flex;
@@ -826,6 +1042,22 @@ body {
 	border-radius: 4px;
 }
 
+.hotel-card-button-off:hover {
+	background-color: #68a2ca;
+}
+
+.hotel-card-button-off:focus {
+	background-color: #68a2ca;
+}
+
+.hotel-card-button-off:active {
+	color: #a7cae0;
+}
+
+.hotel-card-button-off:disabled {
+	color: #a7cae0;
+}
+
 .hotel-card-button-on {
 	font-size: 16px;
 	line-height: 20px;
@@ -837,6 +1069,39 @@ body {
 	padding: 8px 18px;
 	border-radius: 4px;
 }
+
+.hotel-card-button-on:hover {
+	background-color: #6c9e42;
+}
+
+.hotel-card-button-on:focus {
+	background-color: #6c9e42;
+}
+
+.hotel-card-button-on:active {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-card-button-on:disabled {
+	background-color: #e5e5e5;
+}
+
+.hotel-card-button-more:hover {
+	background-color: #615048;
+}
+
+.hotel-card-button-more:focus {
+	background-color: #615048;
+}
+
+.hotel-card-button-more:active {
+	color: #9e9089;
+}
+
+.hotel-card-button-more:disabled {
+	background-color: #e5e5e5;
+}
+
 
 .hotel-raiting {
 	font-size: 16px;
@@ -873,6 +1138,18 @@ body {
 	text-align: center;
 	color: #000000;
 	background-color: #f2f2f2;
+}
+
+.pagination-link:hover {
+	background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+	background-color: #68a2ca;
+}
+
+.pagination-link:active {
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link {
