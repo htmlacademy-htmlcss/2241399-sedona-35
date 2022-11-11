@@ -180,6 +180,39 @@
 
 			</div>
 		</footer>
+		<div class="modal-container">
+			<div class="modal modal-search">
+				<button class="modal-close-button">
+					<span class="visually-hidden">Закрыть</span>
+				  </button>
+				  <section class="modal-content">
+					<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+						<p class="field-group">
+							<label class="search-form-label" for="arrival-field">Дата Заезда:</label>
+							<input class="search-form-field field" type="text" id="arrival-field" name="arrival-field" placeholder="27 апреля 2020">
+						  </p>
+						  <p class="field-group">
+							<label class="search-form-label" for="departure-field">Дата Выезда:</label>
+							<input class="search-form-field field" type="text" id="departure-field" name="departure-field" placeholder="1 сентября 2023">
+						  </p>
+						  <div class="age-wrapper">
+						  <p class="field-group-adult">
+							<label class="search-form-label" for="adults-field">Взрослые:</label>
+							<input class="search-form-field-age field" type="text" id="adults-field" name="adults-field">
+						  </p>
+						  <p class="field-group-children">
+							<label class="search-form-label" for="children-field">Дети:</label>
+							<input class="search-form-field-age field" type="text" id="children-field" name="children-field">
+						  </p>
+						  </div>
+						  <button class="button search-form-button" type="submit">Найти</button>
+					</form>
+				  </section>
+
+			</div>
+
+		</div>
 	</body>
 
 </html>
