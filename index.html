@@ -39,11 +39,11 @@
 						<a class="navigation-link icon-favourite" href="#">
 
 							<span class="visually-hidden">Избранное</span>
-							<p class="favourites-quantity">12</p>
+							<span class="favourites-quantity">12</span>
 						</a>
 					</li>
 					<li class="header-button-button">
-					<a class="button button-search-hotel-header" href="catalog.html">Хочу сюда!</a>
+						<a class="button button-search-hotel-header" href="catalog.html">Хочу сюда!</a>
 					</li>
 
 				</ul>
@@ -72,19 +72,20 @@
 					</li>
 					<li class="advantages-item light-item">
 						<div class="item-h3-and-p">
-						<h3 class="advantages-title advantages-title-light">Небольшая площадь</h3>
-						<p class="advantages-description">Все достопримечательности находятся очень близко</p>
+							<h3 class="advantages-title advantages-title-light">Небольшая площадь</h3>
+							<p class="advantages-description">Все достопримечательности находятся очень близко</p>
 						</div>
 					</li>
 					<li class="advantages-item dark-item">
 						<div class="item-h3-and-p">
-						<h3 class="advantages-title advantages-title-light">Красивая<br> дорога</h3>
-						<p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-						</div></li>
+							<h3 class="advantages-title advantages-title-light">Красивая<br> дорога</h3>
+							<p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
+					</li>
 					<li class="advantages-item light-item">
 						<div class="item-h3-and-p">
-						<h3 class="advantages-title advantages-title-light">Мало<br>туристов</h3>
-						<p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+							<h3 class="advantages-title advantages-title-light">Мало<br>туристов</h3>
+							<p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
 						</div>
 					</li>
 					<li class="main-advantages-item-2">
@@ -100,22 +101,25 @@
 
 						<div class="icon-h3-and-p">
 
-						<h3 class="advantages-title icon-advantages-title-1">Жильё</h3>
-						<p class="advantages-description">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p> </div>
+							<h3 class="advantages-title icon-advantages-title-1">Жильё</h3>
+							<p class="advantages-description">Рекомендуем пожить в настоящем мотеле,<br> всё как в кино!</p>
+						</div>
 					</li>
 					<li class="advantages-item advantages-item-with-icon white-item">
 						<div class="icon-h3-and-p">
-						<h3 class="advantages-title icon-advantages-title-2">Еда</h3>
-						<p class="advantages-description">Всегда заказывайте
-							топовый фирменный бургер,<br> вы не разочаруетесь!</p>
-						</div></li>
+							<h3 class="advantages-title icon-advantages-title-2">Еда</h3>
+							<p class="advantages-description">Всегда заказывайте
+								топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+						</div>
+					</li>
 					<li class="advantages-item advantages-item-with-icon light-item">
 						<div class="icon-h3-and-p">
-						<h3 class="advantages-title icon-advantages-title-3">Сувениры</h3>
-						<p class="advantages-description">Не только китайского,
-							но и настоящего местного производства!</p>
+							<h3 class="advantages-title icon-advantages-title-3">Сувениры</h3>
+							<p class="advantages-description">Не только китайского,
+								но и настоящего местного производства!</p>
 
-						</div></li>
+						</div>
+					</li>
 				</ul>
 			</section>
 
@@ -133,7 +137,7 @@
 						<span class="visually-hidden">
 							E-mail
 						</span>
-						<input class="field" id="email-to-subscription" name="appointment-date" type="email" placeholder="Ваш e-mail" required></label>
+						<input class="field email-field" id="email-to-subscription" name="appointment-date" type="email" placeholder="Ваш e-mail" required></label>
 					<button class="subscribe" type="submit">Подписаться</button>
 
 				</form>
@@ -185,31 +189,55 @@
 			<div class="modal modal-search">
 				<button class="modal-close-button">
 					<span class="visually-hidden">Закрыть</span>
-				  </button>
-				  <section class="modal-content">
+				</button>
+				<section class="modal-content">
 					<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
 						<p class="field-group">
-							<label class="search-form-label" for="arrival-field">Дата Заезда:</label>
+							<label class="search-form-label date-label" for="arrival-field">Дата Заезда:</label>
 							<input class="search-form-field field" type="text" id="arrival-field" name="arrival-field" placeholder="27 апреля 2020">
-						  </p>
-						  <p class="field-group">
-							<label class="search-form-label" for="departure-field">Дата Выезда:</label>
+							<span class="error warning-message">Мы не можем отправить вас в прошлое.</span>
+						</p>
+
+						<p class="field-group">
+							<label class="search-form-label date-label" for="departure-field">Дата Выезда:</label>
 							<input class="search-form-field field" type="text" id="departure-field" name="departure-field" placeholder="1 сентября 2023">
-						  </p>
-						  <div class="age-wrapper">
-						  <p class="field-group-adult">
-							<label class="search-form-label" for="adults-field">Взрослые:</label>
-							<input class="search-form-field-age field" type="text" id="adults-field" name="adults-field">
-						  </p>
-						  <p class="field-group-children">
-							<label class="search-form-label" for="children-field">Дети:</label>
-							<input class="search-form-field-age field" type="text" id="children-field" name="children-field">
-						  </p>
-						  </div>
-						  <button class="button search-form-button" type="submit">Найти</button>
+							<span class="available warning-message">На эти даты есть свободные номера. Пока есть.</span>
+						</p>
+
+						<div class="age-wrapper">
+							<div class="adult-wrapper">
+
+									<label class="search-form-label" for="adults-field">Взрослые:</label>
+									<div class="quantity-wrapper">
+									<button class="button minus-button" type="submit"></button>
+									<input class="search-form-field-age field" type="text" id="adults-field" name="adults-field" placeholder="2">
+									<button class="button plus-button" type="submit"></button>
+									</div>
+									<span class="warning-message"></span>
+
+							</div>
+							<div class="children-wrapper">
+
+									<label class="search-form-label" for="children-field">Дети:</label>
+
+									<div class="quantity-wrapper">
+									<button class="button minus-button" type="submit"></button>
+									<input class="search-form-field-age field" type="text" id="children-field" name="children-field" placeholder="2" aria-describedby="tooltip-children">
+									<span class="tooltip">
+										<span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+									</span>
+									<button class="button plus-button" type="submit">
+									</button>
+									</div>
+									<span class="warning-message"></span>
+
+							</div>
+						</div>
+						<button class="button search-form-button" type="submit">Найти</button>
 					</form>
-				  </section>
+				</section>
 
 			</div>
 

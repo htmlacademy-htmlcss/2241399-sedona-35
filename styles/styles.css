@@ -139,8 +139,6 @@ body {
 .favourites-quantity {
 	position: absolute;
 	display: block;
-	min-width: 20px;
-	height: 20px;
 	border-radius: 10px;
 	background-color: rgba(125, 181, 79, 1);
 	font-size: 10px;
@@ -148,9 +146,11 @@ body {
 	text-align: center;
 	color: #ffffff;
 	font-weight: 400;
-	top: 0px;
+	padding: 5px;
+	top: 12px;
 	right: 4px;
 }
+
 .button-search-hotel-header {
 	font-size: 16px;
 	font-weight: 700;
@@ -472,7 +472,7 @@ body {
 	display: flex;
 }
 
-.field {
+.email-field {
 	margin: 0;
 	padding-block: 16px;
 	padding-left: 20px;
@@ -819,7 +819,7 @@ body {
 	cursor: pointer;
 }
 
-.control-input:checked:before {
+.control-input:checked::before {
 	display: block;
 	content: "";
 	width: 20px;
@@ -847,7 +847,7 @@ body {
 	cursor: pointer;
 }
 
-.control-input-radio:checked:before {
+.control-input-radio:checked::before {
 	display: block;
 	content: "";
 	width: 20px;
@@ -1490,7 +1490,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(242, 242, 242, 0.8);
-
+	z-index: 10;
 }
 
 .modal {
@@ -1523,6 +1523,15 @@ body {
 	cursor: pointer;
 }
 
+.modal-close-button:hover {
+	background-color: #e6e6e6;
+}
+
+.modal-close-button:active {
+	background-color: #e6e6e6;
+
+}
+
 .modal-title {
 	margin: 0;
 	margin-bottom: 64px;
@@ -1536,16 +1545,40 @@ body {
 
 .search-form {
 	display: grid;
-	grid-template-columns: 557px;
-	grid-template-rows: 48px 48px 48px 48px;
-	gap: 48px;
+	grid-template-columns: 558px;
+	grid-template-rows: 73px 73px 73px 60px;
+	gap: 23px;
 }
 
 .field-group {
 	display: grid;
-	grid-template-columns: 118px 440px;
+	grid-template-columns: auto 415px;
+	grid-template-rows: 48px 18px;
 	align-content: center;
 	margin: 0;
+	gap: 4px 24px;
+}
+
+.warning-message {
+	grid-column-start: -2;
+	grid-column-end: -1;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 400;
+	padding-left: 20px;
+	height: 21px;
+}
+
+.error {
+	color: rgba(255, 87, 87, 1);
+	background-color:rgba(255, 255, 255, 1);
+}
+
+.available {
+	color: rgba(51, 51, 51, 1);
+	background-color:rgba(255, 255, 255, 1);
 }
 
 .field-group-adult {
@@ -1570,22 +1603,177 @@ body {
 	padding-block: 12px;
 }
 
+.date-label {
+	position: relative;
+}
+
+.date-label::after {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(../icons/calendare.svg) no-repeat center;
+	right: -415px;
+	top: 16px;
+}
+
 .search-form-field {
-	width: 420px;
-	height: 24px;
 	margin: 0;
-	padding: 12px 0 12px 20px;
+	padding: 17px 0 12px 20px;
 	border-radius: 4px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.search-form-field::placeholder {
+	font: inherit;
+	color:#000000;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
 }
 
 .age-wrapper {
-	display: flex;
-	gap: 88px;
+	display: grid;
+	grid-template-columns: 247px 242px;
+	grid-template-rows: 73px;
+	gap: 70px;
+}
+
+.adult-wrapper {
+	display: grid;
+	grid-template-columns: 91px 111px;
+	column-gap: 51px;
+}
+
+.children-wrapper {
+	display: grid;
+	grid-template-columns: 49px 111px;
+	column-gap: 82px;
 }
 
 .search-form-field-age {
-	width: 111px;
-	border-radius: 4px;
+	border: none;
+	background-color: #f2f2f2;
+	padding: 14px 10px;
+}
+
+.quantity-wrapper {
+	display: grid;
+	grid-template-columns: 40px 31px 40px;
+	grid-template-rows: 48px;
+}
+
+.minus-button {
+	width: 40px;
+	height: 48px;
+	background-color: #f2f2f2;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.minus-button::after {
+	display: block;
+	content: "";
+	position: absolute;
+	background: url(../icons/button-minus.svg);
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 10px;
+}
+
+.search-form-field-age::placeholder {
+	font: inherit;
+	color:#000000;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+.plus-button {
+	width: 40px;
+	height: 48px;
+	background-color: #f2f2f2;
+	border: none;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.plus-button::after {
+	display: block;
+	content: "";
+	position: absolute;
+	background: url(../icons/plus.svg);
+	width: 20px;
+	height: 20px;
+	top: 15px;
+	right: 10px;
+}
+
+.tooltip {
+	position: absolute;
+}
+
+.tooltip::after {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 26px;
+	height: 26px;
+	background-image: url(../icons/info.svg);
+	background-color: #83b3d3;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 12px;
+	right: 43px;
+}
+
+.tooltip-text {
+	position: absolute;
+	background-color: #333333;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	text-transform: none;
+	padding: 15px 18px 18px 22px;
+	border-radius: 10px;
+	top: 55px;
+	right: -235px;
+	transform: translatex(-50%);
+	width: 256px;
+	z-index: 1;
+
+	visibility: hidden;
+	opacity: 0.01;
+	transition: visibility 0.3s, opacity 0.3s;
+}
+
+.tooltip-text::before {
+	display: block;
+	content: "";
+	position:absolute;
+	background: url(../icons/triangle.svg) no-repeat center;
+	width: 19px;
+	height: 9px;
+	top: -8px;
+	right: 133px;
+}
+
+:where(.tooltip:hover, .tooltip:focus-within, .field:focus + .tooltip)
+	.tooltip-text {
+	visibility: visible;
+	opacity: 1;
 }
 
 .search-form-button {
@@ -1598,4 +1786,5 @@ body {
 	color: #ffffff;
 	border: none;
 	border-radius: 10px;
+	cursor: pointer;
 }
