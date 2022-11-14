@@ -408,6 +408,7 @@ body {
 	margin: auto;
 	padding: 8px 50px;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .button-search-hotel:hover {
@@ -1517,10 +1518,20 @@ body {
 	background-color: #f2f2f2;
 	border: none;
 	border-radius: 50%;
-	background-image: url("../icons/close-modal.svg");
-	background-repeat: no-repeat;
-	background-position: center;
 	cursor: pointer;
+}
+
+.modal-close-button::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	top: 19px;
+	right: 19px;
+	mask: url("../icons/close-modal.svg") no-repeat center;
+	background: currentColor;
+
 }
 
 .modal-close-button:hover {
@@ -1529,7 +1540,7 @@ body {
 
 .modal-close-button:active {
 	background-color: #e6e6e6;
-
+	color: #a1a1a1;
 }
 
 .modal-title {
@@ -1552,8 +1563,7 @@ body {
 
 .field-group {
 	display: grid;
-	grid-template-columns: auto 415px;
-	grid-template-rows: 48px 18px;
+	grid-template-columns: auto 440px;
 	align-content: center;
 	margin: 0;
 	gap: 4px 24px;
@@ -1638,7 +1648,7 @@ body {
 	display: grid;
 	grid-template-columns: 247px 242px;
 	grid-template-rows: 73px;
-	gap: 70px;
+	gap: 88px;
 }
 
 .adult-wrapper {
@@ -1681,11 +1691,16 @@ body {
 	display: block;
 	content: "";
 	position: absolute;
-	background: url(../icons/button-minus.svg);
+	mask: url(../icons/button-minus.svg) no-repeat center;
+	background: currentColor;
 	width: 20px;
 	height: 20px;
 	top: 15px;
 	right: 10px;
+}
+
+.minus-button:hover {
+	color: #000000;
 }
 
 .search-form-field-age::placeholder {
@@ -1787,4 +1802,17 @@ body {
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
+}
+
+.search-form-button:hover {
+background-color: rgba(104, 162, 202, 1);
+}
+
+.search-form-button:focus {
+	background-color: rgba(104, 162, 202, 1);
+}
+
+.search-form-button:active {
+	background-color: rgba(104, 162, 202, 1);
+	color: #95beda;
 }
