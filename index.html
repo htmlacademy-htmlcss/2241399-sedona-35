@@ -193,25 +193,31 @@
 				<section class="modal-content">
 					<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 					<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-
-						<p class="field-group">
+						<div class="all-modal-fields">
+						<div class="field-group">
+							<div class="modal-label-wrapper">
 							<label class="search-form-label date-label" for="arrival-field">Дата Заезда:</label>
+							</div>
 							<input class="search-form-field field" type="text" id="arrival-field" name="arrival-field" placeholder="27 апреля 2020">
 							<span class="error warning-message">Мы не можем отправить вас в прошлое.</span>
-							<span class="available warning-message visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
-						</p>
 
-						<p class="field-group">
+						</div>
+
+						<div class="field-group">
+							<div class="modal-label-wrapper">
 							<label class="search-form-label date-label" for="departure-field">Дата Выезда:</label>
+							</div>
 							<input class="search-form-field field" type="text" id="departure-field" name="departure-field" placeholder="1 сентября 2023">
-							<span class="error warning-message visually-hidden">Мы не можем отправить вас в прошлое.</span>
 							<span class="available warning-message">На эти даты есть свободные номера. Пока есть.</span>
-						</p>
+
+						</div>
 
 						<div class="age-wrapper">
 							<div class="adult-wrapper">
+								<div class="modal-label-wrapper">
 
 									<label class="search-form-label" for="adults-field">Взрослые:</label>
+								</div>
 									<div class="quantity-wrapper">
 									<button class="button minus-button" type="button"></button>
 									<input class="search-form-field-age field" type="text" id="adults-field" name="adults-field" placeholder="2">
@@ -221,8 +227,10 @@
 
 							</div>
 							<div class="children-wrapper">
+								<div class="modal-label-wrapper">
 
-									<label class="search-form-label" for="children-field">Дети:</label>
+									<label class="search-form-label" for="children-field">Дети:</label> </div>
+
 
 									<div class="quantity-wrapper">
 									<button class="button minus-button" type="button"></button>
@@ -237,7 +245,10 @@
 
 							</div>
 						</div>
+						</div>
 						<button class="button search-form-button" type="submit">Найти</button>
+						</div>
+
 					</form>
 				</section>
 

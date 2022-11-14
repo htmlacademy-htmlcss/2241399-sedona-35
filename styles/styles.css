@@ -1556,19 +1556,21 @@ body {
 	text-transform: uppercase;
 }
 
-.search-form {
+.all-modal-fields {
 	display: grid;
 	grid-template-columns: 558px;
-	grid-template-rows: 73px 73px 73px 60px;
+	grid-template-rows: 73px 73px 73px;
 	gap: 2px;
 }
 
 .field-group {
 	display: grid;
 	grid-template-columns: auto 440px;
+	grid-template-rows: 48px auto;
 	align-content: center;
 	margin: 0;
-	column-gap:24px;
+	column-gap: auto;
+	row-gap: 4px;
 }
 
 .warning-message {
@@ -1577,15 +1579,14 @@ body {
 	font-weight: 400;
 	padding-left: 20px;
 	height: 21px;
+	grid-column: 2/3;
 }
 
-.warning-message::before {
+.modal-label-wrapper::after {
 	display: block;
 	content: "";
 	height: 42px;
 	grid-column: 2/1;
-	grid-row: 3/2;
-
 }
 
 .error {
@@ -1641,7 +1642,7 @@ body {
 	height: 20px;
 	background: url(../icons/calendare.svg) no-repeat center;
 	right: -415px;
-	top: 16px;
+	top: 28px;
 }
 
 .search-form-field {
@@ -1664,18 +1665,19 @@ body {
 	display: grid;
 	grid-template-columns: 247px 242px;
 	grid-template-rows: 73px;
-	gap: 88px;
+	gap: 70px;
 }
 
 .adult-wrapper {
 	display: grid;
-	grid-template-columns: 91px 111px;
-	column-gap: 51px;
+	grid-template-columns: 91px 110px;
+	column-gap: 46px;
 }
 
 .children-wrapper {
 	display: grid;
-	grid-template-columns: 49px 111px;
+	grid-template-columns: 49px 110px;
+	grid-template-rows: 48px auto;
 	column-gap: 82px;
 }
 
@@ -1727,6 +1729,7 @@ body {
 	font-weight: 700;
 	text-align: center;
 }
+
 .plus-button {
 	width: 40px;
 	height: 48px;
@@ -1821,6 +1824,7 @@ body {
 	background-color: #83b3d3;
 	color: #ffffff;
 	border: none;
+	padding: 18px 265px;
 	border-radius: 10px;
 	cursor: pointer;
 }
