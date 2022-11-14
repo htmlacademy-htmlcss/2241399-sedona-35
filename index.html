@@ -198,11 +198,13 @@
 							<label class="search-form-label date-label" for="arrival-field">Дата Заезда:</label>
 							<input class="search-form-field field" type="text" id="arrival-field" name="arrival-field" placeholder="27 апреля 2020">
 							<span class="error warning-message">Мы не можем отправить вас в прошлое.</span>
+							<span class="available warning-message visually-hidden">На эти даты есть свободные номера. Пока есть.</span>
 						</p>
 
 						<p class="field-group">
 							<label class="search-form-label date-label" for="departure-field">Дата Выезда:</label>
 							<input class="search-form-field field" type="text" id="departure-field" name="departure-field" placeholder="1 сентября 2023">
+							<span class="error warning-message visually-hidden">Мы не можем отправить вас в прошлое.</span>
 							<span class="available warning-message">На эти даты есть свободные номера. Пока есть.</span>
 						</p>
 
@@ -211,9 +213,9 @@
 
 									<label class="search-form-label" for="adults-field">Взрослые:</label>
 									<div class="quantity-wrapper">
-									<button class="button minus-button" type="submit"></button>
+									<button class="button minus-button" type="button"></button>
 									<input class="search-form-field-age field" type="text" id="adults-field" name="adults-field" placeholder="2">
-									<button class="button plus-button" type="submit"></button>
+									<button class="button plus-button" type="button"></button>
 									</div>
 									<span class="warning-message"></span>
 
@@ -223,12 +225,12 @@
 									<label class="search-form-label" for="children-field">Дети:</label>
 
 									<div class="quantity-wrapper">
-									<button class="button minus-button" type="submit"></button>
+									<button class="button minus-button" type="button"></button>
 									<input class="search-form-field-age field" type="text" id="children-field" name="children-field" placeholder="2" aria-describedby="tooltip-children">
 									<span class="tooltip">
 										<span class="tooltip-text" role="tooltip" id="tooltip-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
 									</span>
-									<button class="button plus-button" type="submit">
+									<button class="button plus-button" type="button">
 									</button>
 									</div>
 									<span class="warning-message"></span>

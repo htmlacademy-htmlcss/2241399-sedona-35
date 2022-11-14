@@ -938,6 +938,7 @@ body {
 
 .range-input-from::-webkit-outer-spin-button,
 .range-input-from::-webkit-inner-spin-button {
+  appearance: textfield;
   appearance: none;
   margin: 0;
 }
@@ -962,6 +963,7 @@ body {
 
 .range-input-to::-webkit-outer-spin-button,
 .range-input-to::-webkit-inner-spin-button {
+  appearance: textfield;
   appearance: none;
   margin: 0;
 }
@@ -1558,7 +1560,7 @@ body {
 	display: grid;
 	grid-template-columns: 558px;
 	grid-template-rows: 73px 73px 73px 60px;
-	gap: 23px;
+	gap: 2px;
 }
 
 .field-group {
@@ -1566,14 +1568,10 @@ body {
 	grid-template-columns: auto 440px;
 	align-content: center;
 	margin: 0;
-	gap: 4px 24px;
+	column-gap:24px;
 }
 
 .warning-message {
-	grid-column-start: -2;
-	grid-column-end: -1;
-	grid-row-start: 2;
-	grid-row-end: 3;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 400;
@@ -1581,10 +1579,28 @@ body {
 	height: 21px;
 }
 
+.warning-message::before {
+	display: block;
+	content: "";
+	height: 42px;
+	grid-column: 2/1;
+	grid-row: 3/2;
+
+}
+
 .error {
 	color: rgba(255, 87, 87, 1);
 	background-color:rgba(255, 255, 255, 1);
 }
+
+.field-input-error ~ .error {
+	display: block;
+}
+
+.field-input-success ~ .available {
+	display: block;
+}
+
 
 .available {
 	color: rgba(51, 51, 51, 1);
@@ -1691,8 +1707,8 @@ body {
 	display: block;
 	content: "";
 	position: absolute;
-	mask: url(../icons/button-minus.svg) no-repeat center;
-	background: currentColor;
+	mask: url(../icons/button-minus.svg);
+	background-color: currentColor;
 	width: 20px;
 	height: 20px;
 	top: 15px;
@@ -1700,7 +1716,7 @@ body {
 }
 
 .minus-button:hover {
-	color: #000000;
+	color:rgb(0, 0, 0);
 }
 
 .search-form-field-age::placeholder {
@@ -1727,11 +1743,16 @@ body {
 	display: block;
 	content: "";
 	position: absolute;
-	background: url(../icons/plus.svg);
+	mask: url(../icons/plus.svg);
+	background-color: currentColor;
 	width: 20px;
 	height: 20px;
 	top: 15px;
 	right: 10px;
+}
+
+.minus-button:hover {
+	color:rgb(0, 0, 0);
 }
 
 .tooltip {
