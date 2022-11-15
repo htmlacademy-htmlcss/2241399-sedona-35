@@ -13,6 +13,7 @@
 				<a class="navigation-logo" href="index.html">
 					<img class="page-header-logo" alt="Логотип города Седона" src="./images/sedona-logo.svg" width="138" height="64">
 				</a>
+
 				<ul class="navigation-list">
 					<li class="navigation-item">
 						<a class="navigation-link" href="index.html">Главная</a>
@@ -28,20 +29,15 @@
 				<ul class="navigation-list navigation-user">
 					<li class="navigation-item">
 						<a class="navigation-link icon-loupe" href="#">
-
-							<span class="visually-hidden">
-								Поиск по странице
-							</span>
+							<span class="visually-hidden">Поиск по странице</span>
 						</a>
 					</li>
 					<li class="navigation-item">
 						<a class="navigation-link icon-favourite" href="#">
-
 							<span class="visually-hidden">Избранное</span>
 							<span class="favourites-quantity">12</span>
 						</a>
 					</li>
-
 				</ul>
 				<a class="button button-search-hotel-header" href="catalog.html">Хочу сюда!</a>
 			</nav>
@@ -72,27 +68,25 @@
 								<li class="catalog-filter-item">
 									<label class="control control-checkbox">
 										<input class="control-input" type="checkbox" name="infrastructure" value="swimmigpool" checked>
-											Бассейн</span>
+										Бассейн
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control control-checkbox">
 										<input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
-
-											Парковка</span>
+										Парковка
 									</label>
 								</li>
 								<li class="catalog-filter-item">
 									<label class="control control-checkbox">
 										<input class="control-input" type="checkbox" name="infrastructure" value="wifi">
-											WI-FI</span>
+										WI-FI
 									</label>
 								</li>
 							</ul>
 						</fieldset>
 
 						<fieldset class="catalog-filter-group hotel-type-block">
-
 							<legend class="catalog-filter-title">Тип Жилья</legend>
 							<ul class="catalog-filter-list">
 								<li class="catalog-filter-item">
@@ -115,36 +109,33 @@
 								</li>
 							</ul>
 						</fieldset>
+
 						<fieldset class="catalog-filter-group price-block">
 							<legend class="catalog-filter-title">Стоимость, ₽:</legend>
 							<div class="range">
-								<div class="range-wrapper-inputs"> <input class="range-input-from" type="number" value="0" name="min-price">
-									<label class="catalog-filter-label-from">
-										от </label>
-									<input class="range-input-to" type="number" value="9000" name="max-price">
-									<label class="catalog-filter-label-to">
-										до
-									</label>
+								<div class="range-wrapper-inputs">
+									<input class="range-input-from" id="min-price" type="number" value="0" name="min-price">
+									<label class="catalog-filter-label-from" for="min-price">от</label>
+									<input class="range-input-to" id="max-price" type="number" value="9000" name="max-price">
+									<label class="catalog-filter-label-to" for="max-price">до</label>
 								</div>
 							</div>
 
-								<div class="range-scale">
-									<div class="range-bar" style="right: 21px; width: 143px">
-										<button class="range-toggle toggle-min">
-											<span class="visually-hidden">Изменить минимальную цену.</span>
-										</button>
-										<button class="range-toggle toggle-max">
-											<span class="visually-hidden">Изменить максимальную цену.</span>
-										</button>
-									</div>
-
+							<div class="range-scale">
+								<div class="range-bar" style="right: 21px; width: 143px">
+									<button class="range-toggle toggle-min">
+										<span class="visually-hidden">Изменить минимальную цену.</span>
+									</button>
+									<button class="range-toggle toggle-max">
+										<span class="visually-hidden">Изменить максимальную цену.</span>
+									</button>
 								</div>
+							</div>
 						</fieldset>
 						<div class="form-buttons">
 							<button class="button filter-button-apply" type="submit">Применить</button>
 							<button class="button filter-button-reset" type="reset">Сбросить</button>
 						</div>
-
 					</form>
 				</section>
 			</div>
@@ -158,15 +149,12 @@
 				</select>
 				<div class="view-type-buttons">
 					<a href="#" class="button sort-button sort-table" aria-current="page">
-
 						<span class="visually-hidden">Показать таблицу</span>
 					</a>
 					<a class="button sort-button sort-gallery" href="#">
-
 						<span class="visually-hidden">Показать галерею карточек</span>
 					</a>
 					<a class="button sort-button sort-list" href="#">
-
 						<span class="visually-hidden">Показать список</span>
 					</a>
 				</div>
@@ -177,7 +165,6 @@
 					<a class="hotel-card-link" href="#">
 						<h3 class="hotel-card-title">Amara Resort & Spa</h3>
 						<img class="hotel-card-image" src="images/hotel-card-images/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
-
 					</a>
 					<div class="hotel-card-discription">
 						<p class="hotel-card-type">Гостиница</p>
@@ -196,7 +183,6 @@
 					<a class="hotel-card-link" href="#">
 						<h3 class="hotel-card-title">Villas at Poco Diablo</h3>
 						<img class="hotel-card-image" src="images/hotel-card-images/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
-
 					</a>
 					<div class="hotel-card-discription">
 						<p class="hotel-card-type">Гостиница</p>
@@ -210,13 +196,11 @@
 						</div>
 						<p class="hotel-raiting">Рейтинг: 9,2</p>
 					</div>
-
 				</li>
 				<li class="hotel-card">
 					<a class="hotel-card-link" href="#">
 						<h3 class="hotel-card-title">Desert Quail Inn</h3>
 						<img class="hotel-card-image" src="images/hotel-card-images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
-
 					</a>
 					<div class="hotel-card-discription">
 						<p class="hotel-card-type">Гостиница</p>
@@ -235,7 +219,6 @@
 					<a class="hotel-card-link" href="#">
 						<h3 class="hotel-card-title">GreenTree Inn</h3>
 						<img class="hotel-card-image" src="images/hotel-card-images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
-
 					</a>
 					<div class="hotel-card-discription">
 						<p class="hotel-card-type">Гостиница</p>
@@ -274,7 +257,6 @@
 					<a class="pagination-link" href="#">10</a>
 				</li>
 			</ul>
-			</div>
 
 			<section class="newsletter-subscription-catalog">
 				<h2 class="subscription">Подпишитесь на рассылку</h2>
@@ -286,51 +268,44 @@
 						</span>
 						<input class="field email-field" id="email-to-subscription" name="appointment-date" type="email" placeholder="Ваш e-mail" required></label>
 					<button class="subscribe" type="submit">Подписаться</button>
-
 				</form>
 			</section>
-			<footer>
-				<div class="page-footer-container">
-					<section class="footer-social">
-						<h2 class="visually-hidden">Социальные сети города Седона</h2>
-						<ul class="footer-social-list">
-							<li class="footer-social-item">
-								<a class="button icon-vk" href="https://vk.com/htmlacademy">
-
-									<span class="visually-hidden">Вконтакте</span>
-								</a>
-							</li>
-							<li class="footer-social-item">
-								<a class="button icon-telegram" href="https://t.me/htmlacademy ">
-
-									<span class="visually-hidden">Телеграм</span>
-								</a>
-							</li>
-							<li class="footer-social-item">
-
-								<a class="button icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
-									<span class="visually-hidden">Ютуб</span>
-								</a>
-							</li>
-						</ul>
-					</section>
-					<section class="footer-phone">
-						<h2 class="visually-hidden">Контактный телефон города Седоны</h2>
-
-						<a class="footer-contact-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-					</section>
-
-					<div class="footer-link">
-
-						<a class="button html-academy-logo" href="https://htmlacademy.ru/">
-
-							<span class="visually-hidden">Разработано в HTML Academy</span>
-						</a>
-					</div>
-
-				</div>
-			</footer>
 		</main>
+
+		<footer>
+			<div class="page-footer-container">
+				<section class="footer-social">
+					<h2 class="visually-hidden">Социальные сети города Седона</h2>
+					<ul class="footer-social-list">
+						<li class="footer-social-item">
+							<a class="button social-icon social-icon-vk" href="https://vk.com/htmlacademy">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="button social-icon social-icon-telegram" href="https://t.me/htmlacademy ">
+								<span class="visually-hidden">Телеграм</span>
+							</a>
+						</li>
+						<li class="footer-social-item">
+							<a class="button social-icon social-icon-youtube" href="https://www.youtube.com/user/htmlacademyru">
+								<span class="visually-hidden">Ютуб</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+				<section class="footer-phone">
+					<h2 class="visually-hidden">Контактный телефон города Седоны</h2>
+					<a class="footer-contact-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+				</section>
+
+				<div class="footer-link">
+					<a class="button html-academy-logo" href="https://htmlacademy.ru/">
+						<span class="visually-hidden">Разработано в HTML Academy</span>
+					</a>
+				</div>
+			</div>
+		</footer>
 
 	</body>
 
