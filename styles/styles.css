@@ -882,7 +882,7 @@ body {
 .range-scale {
 	position: relative;
 	height: 4px;
-	margin-top: 48px;
+	margin-top: 44px;
 	background-color: #61696c;
 }
 
@@ -1088,7 +1088,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	padding: 50px 70px 40px 70px;
-	gap: 70px;
+	gap: 69px;
 }
 
 .sort-button {
@@ -1192,7 +1192,7 @@ body {
 
 .view-type-buttons {
 	display: flex;
-	gap: 8px;
+	gap: 3px;
 }
 
 .sort-selection {
@@ -1604,12 +1604,12 @@ body {
 	background-color: #ffffff;
 }
 
-.search-form-input-error~.search-form-message-error {
+.search-form-input-error ~ .search-form-message-error {
 	display: block;
 	color: #ff5757;
 }
 
-.search-form-input-success~.search-form-message-success {
+.search-form-input-success ~ .search-form-message-success {
 	display: block;
 }
 
