@@ -1,15 +1,11 @@
 const modal = document.querySelector('.modal-container');
-
 const buttonOpenModal = document.querySelector('.open-button');
-
 const buttonCloseModal = modal.querySelector('.modal-close-button');
 
 buttonCloseModal.addEventListener('click', () => {
-	modal.classList.add('visually-hidden');
+  modal.classList.add('modal-container-close');
 });
 
 buttonOpenModal.addEventListener('click', () => {
-	modal.classList.remove('visually-hidden');
+  modal.classList.remove('modal-container-close');
 });
-
-console.log(modal, buttonOpenModal, buttonCloseModal);
