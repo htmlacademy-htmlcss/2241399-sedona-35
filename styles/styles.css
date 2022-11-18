@@ -105,6 +105,14 @@ body {
 	position: relative;
 }
 
+.navigation-link:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation-link:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
 .navigation-link[aria-current="page"]::after {
 	content: "";
 	display: block;
@@ -121,15 +129,42 @@ body {
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url("../icons/stack.svg#search") no-repeat center;
+	mask: url("../icons/stack.svg#search") no-repeat center;
+	color: currentcolor;
 }
+
+.icon-loupe:hover::before {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-loupe:active::before {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-loupe:disabled::before {
+	color: rgba(0, 0, 0, 0.1);
+}
+
 
 .icon-favourite::before {
 	content: "";
 	display: block;
 	width: 20px;
 	height: 20px;
-	background: url("../icons/stack.svg#favourites") no-repeat center;
+	mask: url("../icons/stack.svg#favourites") no-repeat center;
+	background-color: currentcolor;
+}
+
+.icon-favourite:hover::before {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.icon-favourite:active::before {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.icon-favourite:disabled::before {
+	color: rgba(0, 0, 0, 0.1);
 }
 
 .favourites-quantity {
@@ -642,29 +677,13 @@ body {
 	margin-left: 41px;
 }
 
-.html-academy-logo {
-	color: #000000;
-}
-
-.html-academy-logo::before {
-	content: "";
-	display: block;
+.logo-html-academy {
 	width: 115px;
 	height: 50px;
-	mask: url("../icons/stack.svg#logo-html-academy") no-repeat center;
-	background: currentcolor;
 }
 
-.html-academy-logo:hover {
-	color: #756157;
-}
-
-.html-academy-logo:focus {
-	color: #756157;
-}
-
-.html-academy-logo:active {
-	color: #7561574d;
+.logo-html-academy:hover {
+	fill: #756157;
 }
 
 .search-hotel-filters {
@@ -1342,7 +1361,7 @@ body {
 	color: rgba(229, 229, 229, 0.3);
 }
 
-.hotel-card-button-off:disabled {
+.hotel-card-button-off:any-link:not([href]) {
 	color: #ffffff;
 	background-color: #e5e5e5;
 }
@@ -1371,7 +1390,7 @@ body {
 	color: #ffffff4d;
 }
 
-.hotel-card-button-on:disabled {
+.hotel-card-button-on:any-link:not([href]) {
 	background-color: #e5e5e5;
 	color: #ffffff;
 }
@@ -1389,7 +1408,7 @@ body {
 	color: #9e9089;
 }
 
-.hotel-card-button-more:disabled {
+.hotel-card-button-more:any-link:not([href]) {
 	background-color: #e5e5e5;
 }
 
