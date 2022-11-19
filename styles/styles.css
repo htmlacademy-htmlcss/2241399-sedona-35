@@ -224,22 +224,18 @@ body {
 }
 
 .welcome-to-sedona {
-	background-color: #3b6689;
-	color: #ffffff;
-	background-image: url("../images/inner-white-background.png"), url("../images/index-main-background.jpg");
-	background-position: bottom;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
+	box-sizing: border-box;
 	display: block;
-	margin: 0 auto;
-	width: 1200px;
-	height: 485px;
+	padding: 31px 70px 62px;
+	color: #ffffff;
+	text-shadow: 0 0 20px #000000;
+	background: url("../images/inner-white-background.png") no-repeat bottom / 100% auto, url("../images/index-main-background.jpg") no-repeat center / cover;
+	background-color: #3b6689;
 }
 
 .welcome-to-sedona-img {
 	display: block;
-	margin: 0 auto;
-	padding-top: 51px;
+	margin: 21px auto;
 }
 
 .sedona-discripton-section {
@@ -426,6 +422,12 @@ body {
 	padding-bottom: 96px;
 	padding-left: 304px;
 	text-align: center;
+}
+
+.button {
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 
 .button-search-hotel {
@@ -1266,6 +1268,7 @@ body {
 
 .hotel-card {
 	display: grid;
+	grid-template-rows: 1fr;
 	gap: 16px;
 	border: 1px solid #e6e6e6;
 	border-radius: 4px;
@@ -1274,6 +1277,7 @@ body {
 
 .hotel-card-link {
 	display: grid;
+	grid-template-rows: min-content 1fr;
 	gap: 16px;
 }
 
@@ -1632,6 +1636,7 @@ body {
 	display: grid;
 	grid-template-columns: 133px 1fr;
 	align-content: center;
+	align-items: center;
 	margin: 0;
 	gap: 4px;
 }
