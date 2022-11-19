@@ -293,17 +293,19 @@ body {
 
 .main-h3-and-p {
 	display: block;
-	padding: 92px 87px 111px;
+	padding: 92px 30px 111px;
+	width: 400px;
 }
 
 .item-h3-and-p {
 	display: block;
-	padding: 74px 84px 122px;
+	padding: 78px 84px 122px;
+	width: 100%;
 }
 
 .icon-h3-and-p {
 	display: block;
-	padding: 50px 85px 86px 81px;
+	padding: 51px 85px 86px 84px;
 }
 
 .main-advantages-item {
@@ -434,7 +436,7 @@ body {
 }
 
 .button-search-hotel {
-	font-size: 20px;
+	font-size: 17px;
 	font-weight: 700;
 	line-height: 36px;
 	text-align: center;
@@ -444,7 +446,7 @@ body {
 	text-transform: uppercase;
 	display: block;
 	margin: auto;
-	padding: 8px 35px;
+	padding: 8px 55px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -517,7 +519,7 @@ body {
 	margin: 0;
 	padding-block: 16px;
 	padding-left: 20px;
-	width: 405px;
+	padding-right: 209px;
 	font: inherit;
 	font-size: 18px;
 	line-height: 20px;
@@ -608,6 +610,7 @@ body {
 
 .footer-social {
 	margin-right: 41px;
+	padding-top: 3px;
 }
 
 .footer-social-list {
@@ -1117,7 +1120,7 @@ body {
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	padding: 8px 57px;
+	padding-inline: 57px;
 	max-width: 191px;
 	box-sizing: border-box;
 }
@@ -1535,7 +1538,8 @@ body {
 	box-sizing: border-box;
 	width: 60px;
 	height: 60px;
-	padding: 17px 21px;
+	padding: 13px 21px;
+	margin-right: 5px;
 }
 
 .newsletter-subscription-catalog {
@@ -1712,10 +1716,11 @@ body {
 .quantity-container {
 	display: flex;
 	justify-content: space-between;
+	gap: 3em;
 }
 
 .search-form-field-with-tooltip {
-	grid-template-columns: max-content 1fr;
+	grid-template-columns: auto 1fr;
 	grid-template-rows: 48px auto;
 }
 
@@ -1747,6 +1752,7 @@ body {
 	grid-template-columns: auto 40px 31px 40px;
 	grid-template-areas: "tooltip minus input plus";
 	grid-template-rows: 48px;
+	align-self: end;
 }
 
 .quantity-button {
