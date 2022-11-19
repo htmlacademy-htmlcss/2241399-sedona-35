@@ -293,7 +293,7 @@ body {
 
 .main-h3-and-p {
 	display: block;
-	padding: 92px 74px 111px 74px;
+	padding: 92px 87px 111px;
 }
 
 .item-h3-and-p {
@@ -321,6 +321,9 @@ body {
 	text-align: center;
 }
 
+.advantages-image {
+	object-fit: cover;
+}
 
 .light-item {
 	background-color: #eff6fb;
@@ -1636,7 +1639,6 @@ body {
 	display: grid;
 	grid-template-columns: 133px 1fr;
 	align-content: center;
-	align-self: end;
 	margin: 0;
 	gap: 4px;
 }
@@ -1690,6 +1692,7 @@ body {
 	line-height: 24px;
 	font-weight: 700;
 	background-color: #f2f2f2;
+	align-self: end;
 }
 
 .search-form-input:hover {
@@ -1727,6 +1730,12 @@ body {
 	padding: 14px 10px;
 	text-align: center;
 	appearance: textfield;
+}
+
+.search-form-input-quantity::-webkit-outer-spin-button,
+.search-form-input-quantity::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .search-form-input-quantity:focus-visible {
@@ -1837,8 +1846,7 @@ body {
 	background: url("../icons/stack.svg#triangle") no-repeat bottom / 19px 9px;
 }
 
-.tooltip:hover,
-.tooltip-text {
+.tooltip:hover .tooltip-text {
 	visibility: visible;
 	opacity: 1;
 }
