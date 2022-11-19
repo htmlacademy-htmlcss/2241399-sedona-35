@@ -1636,7 +1636,7 @@ body {
 	display: grid;
 	grid-template-columns: 133px 1fr;
 	align-content: center;
-	align-items: center;
+	align-self: end;
 	margin: 0;
 	gap: 4px;
 }
@@ -1656,6 +1656,7 @@ body {
 	padding-inline: 20px;
 	color: #333333;
 	background-color: #ffffff;
+	margin-bottom: 1em;
 }
 
 .search-form-input-error ~ .search-form-message-error {
@@ -1725,6 +1726,7 @@ body {
 	font-weight: 700;
 	padding: 14px 10px;
 	text-align: center;
+	appearance: textfield;
 }
 
 .search-form-input-quantity:focus-visible {
@@ -1835,7 +1837,8 @@ body {
 	background: url("../icons/stack.svg#triangle") no-repeat bottom / 19px 9px;
 }
 
-:is(.tooltip:hover, .field:focus-visible ~ .tooltip) .tooltip-text {
+.tooltip:hover,
+.tooltip-text {
 	visibility: visible;
 	opacity: 1;
 }
